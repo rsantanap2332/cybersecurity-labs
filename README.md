@@ -1,49 +1,62 @@
-# Cybersecurity-labs - Wazuh SIEM Lab (Blue Team)
+# Blue Team SOC Lab
 
-## Overview
-This project documents a personal lab where I implemented a Wazuh SIEM to monitor endpoints, collect security logs, and generate alerts for suspicious activity.
+This project documents a personal Security Operations Center (SOC) laboratory built to simulate real-world cybersecurity monitoring and incident response.
 
-## Objectives
-- Deploy a Wazuh server in a test environment
-- Connect a Windows endpoint using the Wazuh agent
-- Validate log collection and alert generation
-- Practice basic incident triage and analysis
+The lab integrates multiple security and monitoring tools to detect, analyze and respond to potential threats.
 
-## Lab Architecture
-- Wazuh Manager: (VM / Linux)  
-- Endpoint: Windows 10/11 with Wazuh Agent  
-- Network: Internal lab network (no public exposure)
+## Technologies Used
 
-> Diagram: see `architecture/diagram.png`
+- Proxmox VE (Virtualization Platform)
+- Wazuh SIEM
+- Sysmon (Windows Telemetry)
+- Auditd (Linux Telemetry)
+- Zabbix (Infrastructure Monitoring)
+- Grafana (Visualization and Dashboards)
+- Atomic Red Team (Attack Simulation)
+- Kali Linux (Attacker Simulation)
 
-## Tools Used
-- Wazuh (Manager + Dashboard)
-- Windows Event Logs
-- Sysmon (optional, if used)
-- Basic Linux administration
+## Architecture
 
-## What I Implemented
-- Installed and configured Wazuh Manager and Dashboard
-- Enrolled a Windows endpoint and validated connectivity
-- Generated test security events (failed logins / brute force simulation)
-- Reviewed alerts in the Wazuh dashboard and performed initial triage
+The lab is structured in multiple layers:
 
-## Evidence (Screenshots)
-- Agent connected: `evidence/agent-connected.png`
-- Security alert example: `evidence/alert-example.png`
-- Dashboard view: `evidence/dashboard.png`
+- Data Collection Layer
+- Detection Layer
+- Response Layer
+- Visualization Layer
 
-## Detection & Triage Notes
-When an alert is triggered, I validate:
-1. Source host and user context
-2. Frequency and time window of events
-3. Related Windows events (e.g., authentication failures)
-4. Whether the behavior matches a known technique (MITRE ATT&CK)
+Architecture diagram:
 
-## Lessons Learned
-- Key configuration steps for stable agent enrollment
-- Common pitfalls (time sync, firewall rules, agent keys)
-- How to structure a basic SOC triage workflow
+![SOC Architecture](architecture/soc-architecture.png)
 
-## Security Notice
-All sensitive information (IPs, hostnames, usernames, tokens) was removed or anonymized before publishing.
+## Detection Capabilities
+
+Examples implemented in this lab:
+
+- Brute Force Attack Detection
+- Privilege Escalation Detection
+- Suspicious Process Execution Detection
+
+Each scenario includes:
+
+- Attack simulation
+- Log analysis
+- Detection logic
+- Incident triage process
+
+## Incident Response
+
+The lab also simulates automated and manual response actions using:
+
+- Wazuh Active Response
+- YARA analysis
+- VirusTotal enrichment
+- Quarantine procedures
+
+## Purpose
+
+This lab was created to practice:
+
+- Threat Detection
+- Incident Analysis
+- Security Monitoring
+- Blue Team Operations
