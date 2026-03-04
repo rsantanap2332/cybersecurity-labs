@@ -1,5 +1,4 @@
-# Cybersecurity-labs
-# Wazuh SIEM Lab (Blue Team)
+# Cybersecurity-labs - Wazuh SIEM Lab (Blue Team)
 
 ## Overview
 This project documents a personal lab where I implemented a Wazuh SIEM to monitor endpoints, collect security logs, and generate alerts for suspicious activity.
