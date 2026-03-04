@@ -1,4 +1,5 @@
 # Blue Team SOC Lab
+> Detection Engineering | Incident Response | Threat Simulation
 
 This project documents a personal Security Operations Center (SOC) laboratory built to simulate real-world cybersecurity monitoring and incident response.
 
@@ -6,14 +7,14 @@ The lab integrates multiple security and monitoring tools to detect, analyze and
 
 ## Technologies Used
 
-- Proxmox VE (Virtualization Platform)
-- Wazuh SIEM
-- Sysmon (Windows Telemetry)
-- Auditd (Linux Telemetry)
-- Zabbix (Infrastructure Monitoring)
-- Grafana (Visualization and Dashboards)
-- Atomic Red Team (Attack Simulation)
-- Kali Linux (Attacker Simulation)
+- 🟠 Proxmox VE (Virtualization Platform)
+- 🔵 Wazuh SIEM
+- ⚪ Sysmon (Windows Telemetry)
+- ⚪ Auditd (Linux Telemetry)
+- 🔴 Zabbix (Infrastructure Monitoring)
+- 🟠 Grafana (Visualization and Dashboards)
+- 🔴 Atomic Red Team (Attack Simulation)
+- 🔵 Kali Linux (Attacker Simulation)
 
 ## Architecture
 
