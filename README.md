@@ -11,7 +11,6 @@ The lab integrates multiple security and monitoring tools to detect, analyze and
 - 🔵 Wazuh SIEM
 - ⚪ Sysmon (Windows Telemetry)
 - ⚪ Auditd (Linux Telemetry)
-- 🔴 Zabbix (Infrastructure Monitoring)
 - 🟠 Grafana (Visualization and Dashboards)
 - 🔴 Atomic Red Team (Attack Simulation)
 - 🔵 Kali Linux (Attacker Simulation)
